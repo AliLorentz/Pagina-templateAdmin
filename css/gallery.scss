@@ -1,0 +1,56 @@
+@import "variables.scss";    
+@import "index.scss";
+
+.home-sidebar{
+    z-index: 99;
+}
+
+.lading-page{
+    
+    width: 1fr;
+}
+
+.contenedor{
+    z-index: 1;
+    width: 90%;
+     margin: 15px auto;
+}
+ 
+.elemento {
+
+    border-radius: 5px;
+    width: 200px;
+    background: #fff;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+    overflow: hidden;
+    & img{
+        width:200px;    
+    }
+}
+
+@media screen and (max-width:2000px){
+    .navBar{
+        z-index: 3;
+    }
+}
+
+@media screen and (max-width:800px){
+    .home-sidebar{
+         z-index: 2;
+    }
+    .sidebar{
+        z-index: 3;
+    }
+    .navBar{
+         z-index: 4;
+    }
+}
+
+@media screen and (max-width:414px){
+    .contenedor{
+        width: 50%;
+    }
+}
