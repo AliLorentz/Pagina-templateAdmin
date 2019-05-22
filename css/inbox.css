@@ -1,6 +1,3 @@
-@charset "UTF-8";
-/*V A R I  A B L E S - G L O B A L*/
-/*N A V - B A R*/
 body {
   padding: 0;
   margin: 0;
@@ -499,306 +496,240 @@ body {
   }
 }
 
-/*-------------C O N T E N I D O--------
-
--  maquetado con grid del lading-page
-
--  maquetado de estadisticas
-    -  posicion del contenido .ico/informacion
-
--  maquetado del slider
-
--  lang-c Contenido de el div de informacion de c++
-
--  porcent contenidos en porcentajes del repositorio
-    -animaciones
-
--  footer
-
-- resposive web
---------------------------------------*/
-/*• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •*/
-/*  • • • • • • • • A R E A S - G R I D  • • • • • • • • • • • • • • • •*/
-/*• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •*/
 .lading-page {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr 290px;
-  grid-template-rows: 120px 170px 150px 150px 50px;
-  grid-template-areas: "estadisticas estadisticas estadisticas  estadisticas" "slider slider slider languageC" "slider slider slider porcent" "slider slider slider porcent" "footer footer footer footer";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: "folders inbox" "contact inbox" "none inbox";
   grid-gap: 30px;
   margin: 40px 20px 0 20px;
 }
 
-.estadisticas {
-  grid-area: estadisticas;
-  display: grid;
-  grid-gap: 20px;
-  justify-content: center;
-  text-align: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  /*I M A G E - I C O*/
-  /*I N F O*/
-}
-
-.estadisticas .numbers {
-  padding: 10px;
-  border-radius: 5px;
+.folders {
+  grid-area: folders;
   border: 1px solid rgba(121, 120, 120, 0.5);
   box-shadow: 1px 1px 5px rgba(119, 118, 118, 0.185);
-  background: #fff;
+  color: #6b6b6b;
+  border-radius: 2px;
+}
+
+.folders .titulo-folder {
+  background: #ebebeb;
   display: flex;
-  /*S E L E C C I O N*/
-}
-
-.estadisticas .numbers:nth-of-type(3) {
-  border: 1px solid #b6c7f6;
-  background: #388bf8;
-}
-
-.estadisticas .numbers:nth-of-type(3) .number-info {
-  color: #fff;
-}
-
-.estadisticas .number-ico {
-  display: flex;
+  font-size: 20px;
   justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  width: 50%;
+  color: black;
 }
 
-.estadisticas .number-ico .ico-cir {
+.folders .titulo-folder i {
+  color: #629aa9;
+}
+
+.folders .item-f {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: #e67e22;
-}
-
-.estadisticas a {
-  width: 40px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.estadisticas .number-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  color: #3f3d3d;
-}
-
-.estadisticas .number-info .nInfo {
-  color: #000;
-  font-size: 30px;
-  margin: 0;
-}
-
-.slider {
-  background: #fff;
-  border: 1px solid rgba(121, 120, 120, 0.5);
-  box-shadow: 1px 1px 5px rgba(119, 118, 118, 0.185);
-  border-radius: 5px;
-  grid-area: slider;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.slider .cabezera-slider {
-  align-self: flex-start;
   padding-left: 40px;
-  font-size: 20px;
+  border-top: 1px solid rgba(121, 120, 120, 0.5);
 }
 
-.slider .slider-img {
-  height: 400px;
-}
-
-.slider .slider-img img {
-  height: 400px;
-}
-
-.lang-c {
-  background: #fff;
-  border: 1px solid rgba(121, 120, 120, 0.5);
-  box-shadow: 1px 1px 5px rgba(119, 118, 118, 0.185);
+.folders .item-f .number {
+  align-self: center;
+  padding: 0 10px;
+  background: #F2B33F;
   border-radius: 5px;
-  grid-area: languageC;
-  padding: 15px;
-}
-
-.lang-c .line1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.lang-c .line1 a {
-  text-align: center;
-  width: 50px;
-  background: #2793D8;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 15px;
-  padding: 3px;
-}
-
-.lang-c .line1 a:hover {
-  background: #0fb8d3;
-}
-
-.lang-c .line2 {
-  color: #7e7e7e;
-  margin-top: -15px;
-  font-size: 20px;
-  font-weight: 100;
-}
-
-.lang-c .line3 {
-  color: #7e7e7e;
-  text-align: center;
-}
-
-.porcent {
-  border: 1px solid rgba(121, 120, 120, 0.5);
-  box-shadow: 1px 1px 5px rgba(119, 118, 118, 0.185);
-  border-radius: 5px;
-  grid-area: porcent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #fff;
-  /*Gradientes*/
-  /*A N I M A C I O N*/
-  /*Brillo*/
-}
-
-.porcent p {
-  font-weight: 600;
-  text-align: center;
-}
-
-.porcent .progress-bar {
-  background-color: #1a1a1a;
   height: 20px;
-  padding: 10px;
-  width: 250px;
-  margin: 10px 10px;
-  border-radius: 5px;
-  box-shadow: 0 1px 5px #000;
 }
 
-.porcent .progress-bar span {
-  display: inline-block;
-  text-align: center;
-  height: 100%;
-  border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  transition: width .4s ease-in-out;
-  background: #ccc;
+.folders .item-f .number p {
+  color: white;
+  margin: 2px 0;
+  font-size: 12px;
 }
 
-.porcent .blue span {
-  background-color: #34c2e3;
+.folders .cont {
+  display: flex;
+  padding-left: 0px;
+  justify-content: space-around;
 }
 
-.porcent .green span {
-  background-color: #a5df41;
+/*-----------------------------------------------------------------------------*/
+.contact {
+  grid-area: contact;
+  border: 1px solid rgba(121, 120, 120, 0.5);
+  box-shadow: 1px 1px 5px rgba(119, 118, 118, 0.185);
+  border-radius: 2px;
 }
 
-.porcent .orange span {
-  background-color: #fecf23;
+.contact .titulo-contact {
+  background: #ebebeb;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
 }
 
-.porcent .stripes span {
-  background-size: 30px 30px;
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  animation: animate-stripes 3s linear infinite;
+.contact .titulo-contact i {
+  color: #629aa9;
 }
 
-.porcent .shine span {
+.contact .contactos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgba(121, 120, 120, 0.5);
+}
+
+.contact .contactos img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact .contactos .img-user {
   position: relative;
 }
 
-.porcent .shine span::after {
+.contact .contactos .img-user:after {
   content: "";
-  opacity: 0;
-  position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: #fff;
-  border-radius: 3px;
-  animation: animate-shine 20s ease-out infinite;
+  right: -5px;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: green;
+  border: 2px solid white;
 }
 
-/*-----------------------------------------------------*/
-/*A N I M A C I O N */
-/*-----------------------------------------------------*/
-@keyframes animate-shine {
-  0% {
-    opacity: 0;
-    width: 0;
-  }
-  50% {
-    opacity: .5;
-  }
-  100% {
-    opacity: 0;
-    width: 100%;
-  }
+.contact .contactos .infoPer .estado {
+  color: #6b6b6b;
+  font-size: 10px;
+  margin-top: -10px;
 }
 
-@keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 60px 0;
-  }
-}
-
-/*-----------------------------------------------------*/
-.footer {
-  grid-area: footer;
-  display: flex;
+/*---------------------------------------------------------------------------*/
+.inbox {
+  grid-area: inbox;
   border: 1px solid rgba(121, 120, 120, 0.5);
   box-shadow: 1px 1px 5px rgba(119, 118, 118, 0.185);
-  justify-content: space-between;
-  background: #fff;
-  margin: 0 -20px;
-  padding: 0 20px;
 }
 
-/*----------------------------------------------------------------------- 
-|    R E S P O N S I V E
-\-------------------------------------------------------------------------*/
+.inbox .titulo-inbox {
+  text-align: center;
+  background: #ebebeb;
+  border-bottom: 1px solid rgba(121, 120, 120, 0.5);
+}
+
+.inbox .pack-1 {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.inbox .pack-1 .mail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border: 1px solid rgba(121, 120, 120, 0.5);
+  box-shadow: 1px 1px 5px rgba(119, 118, 118, 0.185);
+  border-top: 1px solid rgba(121, 120, 120, 0.5);
+  border-radius: 4px;
+}
+
+.inbox .pack-1 .mail img {
+  width: 30px;
+  height: 30px;
+}
+
+.inbox .pack-1 .mail .name {
+  color: #6b6b6b;
+}
+
+.inbox .pack-1 .mail .asunto {
+  font-size: 10px;
+}
+
+.inbox .pack-2 {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.inbox .pack-2 .mail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border: 1px solid rgba(121, 120, 120, 0.5);
+  box-shadow: 1px 1px 5px rgba(119, 118, 118, 0.185);
+  border-top: 1px solid rgba(121, 120, 120, 0.5);
+  border-radius: 4px;
+}
+
+.inbox .pack-2 .mail img {
+  width: 30px;
+  height: 30px;
+}
+
+.inbox .pack-2 .mail .name {
+  color: #6b6b6b;
+}
+
+.inbox .pack-2 .mail .asunto {
+  font-size: 10px;
+}
+
+.inbox .pack-3 {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.inbox .pack-3 .mail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border: 1px solid rgba(121, 120, 120, 0.5);
+  box-shadow: 1px 1px 5px rgba(119, 118, 118, 0.185);
+  border-top: 1px solid rgba(121, 120, 120, 0.5);
+  border-radius: 2px;
+}
+
+.inbox .pack-3 .mail img {
+  width: 30px;
+  height: 30px;
+}
+
+.inbox .pack-3 .mail .name {
+  color: #6b6b6b;
+}
+
+.inbox .pack-3 .mail .asunto {
+  font-size: 10px;
+}
+
+/*             R E S P O N S I V E - W E B              */
 @media screen and (max-width: 768px) {
-  .slider .slider-img {
-    height: 300px;
+  .lading-page {
+    grid-template-columns: 768px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "folders" "contact" "inbox";
   }
-  .slider .slider-img img {
-    height: 300px;
+  .folders .item-f {
+    padding-left: 170px;
+  }
+  .folders .cont {
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  .estadisticas {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px  150px;
-  }
   .lading-page {
-    grid-template-columns: 1fr;
-    grid-template-rows: 320px 1fr 150px 1fr 80px;
-    grid-template-areas: "estadisticas" "slider" "languageC" "porcent" "footer";
+    grid-template-columns: 411px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "folders" "contact" "inbox";
+  }
+  .folders .item-f {
+    padding-left: 80px;
+  }
+  .folders .cont {
+    padding-left: 0px;
   }
 }
