@@ -6,12 +6,13 @@ Pagina de plantilla Admin
 </br>
 
 ## Tabla de cursos tomados para el aprendizaje de desarrollo web
-1. [Curso Profesional de Git y GitHub]
-2. [Curso de Responsive Design]
-3. [Curso de Animaciones para la Web]
-4. [Curso de CSS Grid Layout]
-5. [Curso de Sass]
-6. [Fundamentos de JavaScript]
+1. [Curso Profesional de Git y GitHub]https://platzi.com/clases/git-github/)
+2. [Curso de Responsive Design](https://platzi.com/clases/responsive-design/)
+3. [Curso de Animaciones para la Web](https://platzi.com/clases/animaciones-web/)
+4. [Curso de CSS Grid Layout](https://platzi.com/clases/css-grid-layout/)
+5. [Curso de Sass](https://platzi.com/clases/sass/)
+6. [Fundamentos de JavaScript](https://platzi.com/clases/fundamentos-javascript/)
+7. [Desarrollo Web] (https://platzi.com/clases/html5-css3/)
 
 ### Sigueme para mas contenido de este tipo
 [Github](https://github.com/AliLorentz)
