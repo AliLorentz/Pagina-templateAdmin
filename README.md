@@ -12,7 +12,7 @@ Pagina de plantilla Admin
 4. [Curso de CSS Grid Layout](https://platzi.com/clases/css-grid-layout/)
 5. [Curso de Sass](https://platzi.com/clases/sass/)
 6. [Fundamentos de JavaScript](https://platzi.com/clases/fundamentos-javascript/)
-7. [Desarrollo Web] (https://platzi.com/clases/html5-css3/)
+7. [Desarrollo Web](https://platzi.com/clases/html5-css3/)
 
 ### Sigueme para mas contenido de este tipo
 [Github](https://github.com/AliLorentz)
